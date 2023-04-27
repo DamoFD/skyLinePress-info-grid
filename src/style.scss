@@ -1,0 +1,65 @@
+//Mobile-First
+.skyLine-container {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	align-items: center;
+	margin-bottom: 200px;
+}
+
+.skyLine-block {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+}
+
+.skyLine-block__img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+}
+
+.skyLine-block__header {
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.skyLine-block__text {
+	font-size: 20px;
+	text-align: center;
+	word-wrap: break-word;
+}
+
+//Desktop
+@media only screen and (min-width: 900px) {
+	
+.skyLine-container {
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-top: 200px;
+	margin-bottom: 300px;
+}
+
+.skyLine-block {
+	width: 400px;
+}
+
+.skyLine-block__img {
+	width: 300px;
+	height: 300px;
+}
+
+.skyLine-block__header {
+	font-size: 50px;
+}
+
+.skyLine-block__text {
+	font-size: 30px;
+}
+
+}
